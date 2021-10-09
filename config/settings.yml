@@ -1,0 +1,8 @@
+discourse_allow_fields:
+  discourse_allow_fields_enabled:
+    default: true
+    client: true
+  discourse_allow_fields_name:
+    default: "closed"
+    client: true
+    type: list
