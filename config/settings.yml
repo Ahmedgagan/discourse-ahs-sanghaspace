@@ -1,8 +1,8 @@
-discourse_allow_fields:
-  discourse_allow_fields_enabled:
+discourse_ahs_sanghaspace:
+  discourse_ahs_sanghaspace_enabled:
     default: true
     client: true
-  discourse_allow_fields_name:
-    default: "closed"
+  discourse_ahs_sanghaspace_topic_fields_name:
+    default: "closed|accepted_answer_post_id"
     client: true
     type: list

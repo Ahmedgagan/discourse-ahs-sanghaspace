@@ -1,4 +1,4 @@
 en:
   site_settings:
-    discourse_allow_fields_enabled: "Enable Discourse Allow Fields"
-    discourse_allow_fields_name: "Topic fields name to add in topic-tracking-state"
+    discourse_ahs_sanghaspace_enabled: "Enable Discourse ahs sanghaspace"
+    discourse_ahs_sanghaspace_topic_fields_name: "Topic fields name to add in topic-tracking-state"
