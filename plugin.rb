@@ -12,7 +12,7 @@ after_initialize do
     value = field.to_sym
     add_to_serializer(:topic_tracking_state, value) do
       topic = Topic.find(object.topic_id)
-      return topic[value] if topic[value]
+      return topic[value] if topic.has_attribute?(value)
 
       topic.custom_fields[value]
     end
