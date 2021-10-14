@@ -19,6 +19,7 @@ after_initialize do
   end
 
   add_to_serializer(:current_user, :bookmark_count) do
-    scope.user.bookmarks.filter { |bookmark| bookmark.post }.count
+    scope.user.bookmarks.filter { |bookmark| bookmark.post }.count +
+    Topic.joins("INNER JOIN assignments a ON topics.id = a.topic_id").where("a.assigned_to_id = ?", scope.user.id).count
   end
 end
